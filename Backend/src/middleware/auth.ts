@@ -94,7 +94,7 @@ async function getUserFromPayload(payload) {
 export async function accessTokenAuth0() {
   const options = {
     method: 'POST',
-    url: `${process.env.AUTH0_ISSUER}oauth/token`,
+    url: `${process.env.AUTH0_ISSUER}/oauth/token`,
     headers: { 'content-type': 'application/x-www-form-urlencoded', 'Accept-Encoding': 'gzip, deflate' },
     data: new URLSearchParams({
       grant_type: 'client_credentials',
