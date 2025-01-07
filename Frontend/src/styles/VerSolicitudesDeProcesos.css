@@ -1,0 +1,63 @@
+.solicitudes-container {
+    font-family: Arial, sans-serif;
+    padding: 120px;
+    width: 75%; /* Controla el ancho para centrar el contenido */
+    margin: auto;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    background-color: #EEEEEE;
+    color: #333;
+    border: 2px solid #AAAAAA;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+.solicitudes-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.solicitud-card {
+    background-color: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.solicitud-card p {
+    margin: 5px 0;
+}
+
+.solicitud-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.solicitud-card button:hover {
+    background-color: #45a049;
+}
+
+.solicitud-card:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,109 @@
+.solicitudesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.solicitudesTitle {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Tabs for switching between open and applied scholarships */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tab:hover {
+    background-color: #e0e0e0;
+}
+
+.activeTab {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Table Container */
+.tableContainer {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.processesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.processesTable th, .processesTable td {
+    padding: 8px 20px;
+    text-align: left;
+    color: #000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.processesTable th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+/* Base style for status labels */
+.statusLabel {
+    font-weight: bold;
+    padding: 0px 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Styles for different application statuses */
+.statusLabel.open {
+    color: #b58900;          /* Bold yellow text */
+    background-color: #fff9db; /* Faint yellow background */
+    border: 1px solid #ffdd57; /* Light yellow border */
+}
+
+.statusLabel.closed {
+    color: #d32f2f;           /* Bold red text */
+    background-color: #ffebeb; /* Faint red background */
+    border: 1px solid #ff5c5c; /* Light red border */
+}
+
+/* Buttons for each application */
+.buttonGroup button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 5px;
+}
+
+.buttonGroup button:hover {
+    background-color: #0056b3;
+}

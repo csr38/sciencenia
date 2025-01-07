@@ -1,0 +1,24 @@
+diff --git a/dist/index.d.ts b/dist/index.d.ts
+index 106b00da7336c2f46fda97fec7988446e9d85703..f36cbf46381af384d48df91585f79864732ec70e 100644
+--- a/dist/index.d.ts
++++ b/dist/index.d.ts
+@@ -1,7 +1,7 @@
+ import { StoreApi } from 'zustand';
+-import Reactotron from 'reactotron-react-js';
++import Reactotron from 'reactotron-react-native';
+ 
+-type ReactotronCore = ReturnType<typeof Reactotron.configure>;
++type ReactotronReactNative = ReturnType<typeof Reactotron.configure>;
+ interface PluginConfig {
+     stores: Array<{
+         name: string;
+@@ -18,6 +18,6 @@ interface Change {
+     value: unknown;
+ }
+ declare const WILDCARDS: string[];
+-declare function reactotronPluginZustand({ stores }: PluginConfig): Parameters<ReactotronCore['use']>[number];
++declare function reactotronPluginZustand({ stores }: PluginConfig): Parameters<ReactotronReactNative['use']>[number];
+ 
+-export { Change, PluginConfig, ReactotronCore, Subscription, WILDCARDS, reactotronPluginZustand as default };
++export { Change, PluginConfig, ReactotronReactNative, Subscription, WILDCARDS, reactotronPluginZustand as default };
+\ No newline at end of file

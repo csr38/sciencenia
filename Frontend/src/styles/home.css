@@ -1,0 +1,71 @@
+/* Fondo cubre toda la pantalla */
+.background {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Contenedor de todo el contenido */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+    flex-direction: column; 
+}
+
+/* Contenedor para el texto y las mascotas */
+.text-and-mascota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%; 
+    position: relative; 
+}
+
+/* Ajustar imagen de SciEncenia */
+.sciencenia-image {
+    max-width: 80%; 
+    margin-right: 2vw; 
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* Contenedor para las mascotas (aparecen una sobre otra) */
+.mascotas-container {
+    position: relative; 
+    width: 100%;  
+    height: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    overflow: hidden;  
+}
+
+/* Iconos de las mascotas */
+.icon {
+    position: absolute;  
+    width: 15vw; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    right: 2%;
+    top: 30%
+}
+
+/* Mostrar solo el icono activo */
+.icon.visible {
+    opacity: 1; 
+}

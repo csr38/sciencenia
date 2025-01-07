@@ -1,0 +1,226 @@
+/* Navbar.module.css */
+
+/* @import "~font-awesome/css/font-awesome.min.css"; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topNabvar {
+  width: 100%;
+  background: linear-gradient(to right, #e72887ff, #eb77b1ff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  height: 60px; 
+  padding: 0 20px;
+}
+
+/* Logo */
+.topNabvar .logo {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.topNabvar .logo:hover {
+  color: #090E50;
+}
+
+/* Para pantallas grandes, ocultamos el toggle y mostramos el menú normalmente */
+.menuToggle {
+  display: none;
+}
+
+/* Estilos para el menú */
+.menuNav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menuNav li {
+  position: relative;
+}
+
+.menuNav a, .menuNav span {
+  color: white;
+  text-decoration: none;
+  font-size: 14px; 
+  padding: 5px 15px; 
+  display: block;
+}
+
+.menuNav a:hover, .menuNav span:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdownContent {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  background-color: #ec4d9c ;
+  min-width: 160px; 
+  top: 100%;
+  right: 0; 
+  z-index: 1000;
+  border: 1px solid #ec4d9c ;
+  border-radius: 15px;
+  margin-left: -10px;
+
+}
+
+.dropbtn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropbtn::after {
+  content: " ▼";  
+  font-size: 12px; 
+  margin-left: 8px; 
+}
+
+.dropdownContent li {
+  position: relative;
+  border-radius: 15px;
+  background-color: #ec4d9c;
+}
+
+.dropdownContent a, .dropdownContent span {
+  color: white;
+  padding: 8px 12px; 
+  font-size: 13px; 
+  background-color: #ec4d9c;
+  border-radius: 15px;
+  background-color: #ec4d9c;
+}
+
+.dropdownContent a:hover, .dropdownContent span:hover {
+  background-color: #ec81c5;
+  border-radius: 15px;
+  color: white;
+}
+
+.menuNav li:hover > .dropdownContent {
+  display: block;
+}
+
+.subDropdownContent {
+  list-style-type: none; 
+  display: none;
+  position: absolute;
+  background-color: #ec4d9c;
+  min-width: 160px; 
+  top: 0;
+  right: 100%; 
+  z-index: 1000;
+  border: 1px solid #eb77b1ff;
+  border-radius: 15px;
+  color: white;
+}
+
+.dropdownContent li:hover > .subDropdownContent {
+  display: block;
+  color: #ec4d9c;
+}
+
+.subDropdownContent a {
+  color: white;
+  padding: 8px 12px;
+  font-size: 13px; 
+  background-color: #ec4d9c;
+}
+
+.subDropdownContent a:hover {
+  background-color: #ec81c5;
+}
+
+.menuNav li {
+  margin: 0 5px; 
+}
+
+.menuToggle {
+  cursor: pointer;
+}
+
+.menuToggle div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 40px;
+  transition: 0.4s;
+}
+
+/* --- Responsividad --- */
+
+/* Cuando la ventana tiene un ancho menor a 768px, se muestra el botón de toggle y el menú se oculta */
+@media (max-width: 768px) {
+  .menuNav {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #eb77b1ff;
+  }
+
+  .menuNav.active {
+    display: flex; 
+  }
+
+  .menuNav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+  
+  .dropdownContent {
+    margin-left: -80px;
+  }
+  .menuToggle div {
+    margin: 6px 0;
+    width: 30px;
+  }
+}
+
+/* Ajustar estilos de login button */
+.LoginButton {
+  color: white;
+  font-family: Quicksand;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.LoginButton:hover {
+  background-color: transparent;
+  color: #090E50;
+}
+
+.logoutButton {
+  color: white;
+  padding: 10px;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-family: Quicksand;
+  background-color: #2474b4; 
+  font-size: 15px;
+}
+
+.logoutButton:hover {
+  background-color: #145c94 ; 
+}

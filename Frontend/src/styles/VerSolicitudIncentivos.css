@@ -1,0 +1,167 @@
+/* General Background Styling */
+.background-card {
+    background-color: #F5F5F5;
+    color: #090e50;
+    font-family: "Quicksand-Bold", Helvetica, sans-serif;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineación desde el margen izquierdo */
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px; /* Añadido espacio en los márgenes */
+}
+
+/* Card Content */
+.card-content {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+/* Card */
+.card {
+    margin: 20px auto;
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left; /* Asegura que todo el contenido en la card esté alineado a la izquierda */
+}
+
+/* Card Title */
+.card-title {
+    margin-bottom: 25px;
+    margin-top: 15px;
+    text-align: left; /* Cambio para alinear el título hacia la izquierda */
+}
+
+.card-title h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2474b4;
+    text-align: left; /* Cambio para alinear el título hacia la izquierda */
+}
+
+/* Align other paragraphs and elements to the left */
+.sm {
+    margin: 5px;
+    text-align: left; /* Alineación izquierda */
+}
+
+.sfm {
+    margin: 5px;
+    color: #e72887ff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.smb {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Popup Background Overlay */
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    backdrop-filter: blur(8px); /* Adds a stronger blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Container */
+.popup {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    text-align: left; /* Alinea el contenido de la ventana emergente a la izquierda */
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Form Groups Inside Popup */
+.popup .form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Alineación izquierda para las secciones del formulario */
+}
+
+/* Labels Inside Popup */
+.popup .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Inputs and Textareas Inside Popup */
+.popup .form-group input,
+.popup .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.popup .form-group input:focus,
+.popup .form-group textarea:focus {
+    border-color: #2474b4;
+}
+
+.popup .form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Popup Buttons */
+.popup .profile-button {
+    background: #2474b4;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.popup .profile-button:hover {
+    background: #145c94;
+}
+
+.popup .cancel-button {
+    background: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.popup .cancel-button:hover {
+    background: #e0e0e0;
+}
+
+/* Ensure Popup Is on Top of Everything */
+.popup,
+.popup-background {
+    z-index: 9999;
+}

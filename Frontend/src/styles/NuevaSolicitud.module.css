@@ -1,0 +1,66 @@
+/* NuevaSolicitud.css */
+
+
+
+.container {
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .container h2 {
+    color: #090E50;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #090E50 !important;
+    background-color: rgba(255, 255, 255, 0.87);
+    color: #01042b;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(65, 45, 148);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #270c95;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    flex-direction: column;
+  }

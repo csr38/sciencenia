@@ -1,0 +1,79 @@
+services:
+  api:
+    hostname: api
+    build:
+      context: ./
+      args:
+        NODE_ENV: development
+    restart: unless-stopped
+    ports:
+      - "3000:3000" # API
+      - "6499:6499" # Debugger (WebKit Inspector)
+    expose:
+      - "6499"
+    networks:
+      - app-network
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_REGION: ${AWS_REGION}
+      S3_BUCKET_NAME: ${S3_BUCKET_NAME}
+      AUTH0_AUDIENCE: ${AUTH0_AUDIENCE}
+      AUTH0_ISSUER: ${AUTH0_ISSUER}
+      DATABASE_HOST: ${DATABASE_HOST:-db}
+      DATABASE_NAME: ${DATABASE_NAME:-db}
+      DATABASE_USER: ${DATABASE_USER:-db}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-db}
+      AUTH0_M2M_CLIENT_ID: ${AUTH0_M2M_CLIENT_ID}
+      AUTH0_M2M_CLIENT_SECRET: ${AUTH0_M2M_CLIENT_SECRET}
+      GMAIL_APP_USER: ${GMAIL_APP_USER}
+      GMAIL_APP_PASSWORD: ${GMAIL_APP_PASSWORD}
+      FIREBASE_CREDENTIALS: ${FIREBASE_CREDENTIALS}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    command: ["sh", "-c", "bun run src/db/migrate.ts && bun ${BUN_SCRIPT:-dev}"] # This runs the `dev` script by default, but allows overrides
+    tty: true # Allocate a pseudo-TTY
+    develop:
+      watch:
+        - action: sync
+          path: src/
+          target: /usr/src/app
+        - action: rebuild
+          path: package.json
+        - action: rebuild
+          path: bun.lockb
+        - action: rebuild
+          path: Dockerfile
+    volumes:
+      - ./src:/usr/src/app/src 
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${DATABASE_USER:-db}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-db}
+      POSTGRES_DB: ${DATABASE_NAME:-db}
+    networks:
+      - app-network
+    volumes:
+      - db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DATABASE_USER:-db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  app-network:
+    driver: host
+    external: true
+
+volumes:
+  db-volume:

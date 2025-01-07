@@ -1,0 +1,38 @@
+.manageUsersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.buttonColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.buttonColumn button {
+    padding: 10px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.buttonColumn button:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+}

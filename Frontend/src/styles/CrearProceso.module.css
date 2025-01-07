@@ -1,0 +1,47 @@
+.formContainer {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 120px auto 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #090E50;
+    font-size: 2.0em;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #090E50;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #090E50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #272E71;
+}

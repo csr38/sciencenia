@@ -1,0 +1,152 @@
+.solicitudes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.solicitudes-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tab:hover {
+    background-color: #e0e0e0;
+}
+
+.active-tab {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table-container {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.solicitudes-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.solicitudes-table th, .solicitudes-table td {
+    padding: 8px 20px;
+    text-align: left;
+    color: #000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.solicitudes-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.estado-label {
+    font-weight: bold;
+    padding: 0px 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.estado-label.pendiente {
+    color: #b58900;
+    background-color: #fff9db;
+    border: 1px solid #ffdd57;
+}
+
+.estado-label.aprobada {
+    color: #008000;
+    background-color: #dfffe0;
+    border: 1px solid #66cc66;
+}
+
+.estado-label.rechazada {
+    color: #d32f2f;
+    background-color: #ffebeb;
+    border: 1px solid #ff5c5c;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+    padding: 0;
+    line-height: 1;
+    transition: background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+}
+
+.dropdown-button:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 130px;
+    z-index: 1000;
+}
+
+.dropdown-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdown-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+.solicitudes-container p {
+    color: black;
+}

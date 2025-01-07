@@ -1,0 +1,83 @@
+.background {
+  background-color: #F5F5F5;
+  padding-top: 40px;
+  color: #090e50;
+  font-family: "Quicksand-Bold", Helvetica;
+  overflow-y: scroll;
+  }
+
+.container {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.bottonButton{
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1em;
+  color: #090E50;
+  background-color: #F5F5F5;
+  border: 1.5px solid #090E50;
+  cursor: pointer;
+  width: 100%;
+}
+.bottonButtonContainer{
+  display: flex;
+  gap: 10px;
+
+}
+
+.bottonButton:hover{
+  background-color: #090E50;
+  color: #F5F5F5;
+  border: 1.5px solid #090E50;
+}
+
+
+.infoContainer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.dataContainer{
+  margin-right: 35px;
+}
+
+.dataContainer h2{
+  text-align: center;
+}
+
+.dataContainer h3{
+  margin-left: 15px;
+}
+
+.dataContainer p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profileButton {
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  color: #090E50;
+  border: 2px solid #090E50;
+  margin-top: 0px;
+  margin-left: 87%;
+  width: auto;
+}
+
+.profileButton:hover {
+  background-color: #090E50;
+  border: 2px solid #090E50;
+  color: #EEEEEE;
+}

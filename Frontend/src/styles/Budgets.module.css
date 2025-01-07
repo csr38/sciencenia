@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #090E50;
+    min-height: 100vh;
+}
+ 
+.budgetsContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.budgetsContainer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 3em 0 1em 0;
+}
+
+.budgetsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.budgetCard {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    word-break: break-word;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.budgetCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budgetCard h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #e72887ff;
+}
+
+.special {
+    color: #e72887ff;
+}
+
+.budgetCard p {
+    margin: 5px 0;
+    font-size: 14px;
+}

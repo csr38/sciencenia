@@ -1,0 +1,179 @@
+.backgroundAnuncio {
+    background-color: white;
+    padding-top: 40px;
+    color: #090e50;
+    overflow-y: scroll;
+}
+
+.backgroundAnuncio h1 {
+    text-align: center;
+}
+
+.containerAnuncio {
+    width: 100%;
+    max-width: 1200px; /* Nuevo: límite máximo para pantallas grandes */
+    padding-top: 80px;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.containerAnuncio h3 {
+    text-align: center;
+}
+
+.announcementFormAnuncio {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 1000px; 
+    max-width: 2000px; 
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.recipientsAnuncios {
+    margin-bottom: 20px;
+}
+
+.recipientsAnuncios label {
+    font-weight: bold;
+}
+
+.recipientsAnuncios ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subjectAnuncios,
+.messageAnuncios {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profileButton {
+    border-radius: 25px;
+    background-color: #f5f5f5;
+    color: #090E50;
+    border: 2px solid #090E50;
+    margin-top: 15px !important;
+    margin-left: 0;
+    width: auto;
+}
+
+.profileButton:hover {
+    background-color: #090E50;
+    border: 2px solid #090E50;
+    color: #EEEEEE;
+}
+
+.sendButtonAnuncios {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sendButtonAnuncios:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+    border: 1.5px solid #090E50;
+}
+
+.sendButtonAnuncios:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.sendButtonAnuncios:disabled:hover {
+    background-color: #F5F5F5;
+    color: #090E50;
+    border: 1.5px solid #090E50;
+}
+
+/* Dropdown Container */
+.dropdownContainer {
+    position: relative;
+}
+
+/* Three-Dot Button Styling */
+.dropdownButton {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+    padding: 0;
+    line-height: 1;
+    transition: background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+}
+
+.dropdownButton:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+    position: absolute;
+    top: 30px; /* Ajuste para posicionar el dropdown */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 130px;
+    z-index: 1000;
+}
+
+.dropdownMenu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdownMenu button:hover {
+    background-color: #f0f0f0;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcementFormAnuncio {
+        width: 90%; /* Casi todo el ancho de la pantalla */
+        padding: 15px; /* Reduce el padding */
+    }
+}

@@ -1,0 +1,92 @@
+.backgroundReplyAnuncio {
+    background-color: white;
+    padding-top: 40px; 
+    color: #090e50;
+}
+
+.backgroundReplyAnuncio h1 {
+    text-align: center;
+}
+
+.containerReplyAnuncio {
+    width: 100%;
+    max-width: 1200px; 
+    padding-top: 80px;
+    margin: 0 auto; 
+}
+
+.containerReplyAnuncio h3 {
+    text-align: center;
+}
+
+.ReplyannouncementFormAnuncio {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 1000px; 
+    max-width: 2000px; 
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+
+.subjectAnuncios,
+.messageReplyAnuncios {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profileButton {
+    border-radius: 25px;
+    background-color: #f5f5f5;
+    color: #090E50;
+    border: 2px solid #090E50;
+    margin-top: 15px !important;
+    margin-left: 0;
+    width: auto;
+}
+
+.profileButton:hover {
+    background-color: #090E50;
+    border: 2px solid #090E50;
+    color: #EEEEEE;
+}
+
+.sendButtonReplyAnuncios {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sendButtonReplyAnuncios:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+    border: 1.5px solid #090E50;
+}
+
+.sendButtonReplyAnuncios:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.sendButtonReplyAnuncios:disabled:hover {
+    background-color: #F5F5F5;
+    color: #090E50;
+    border: 1.5px solid #090E50;
+}
+

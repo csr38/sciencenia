@@ -1,0 +1,124 @@
+.manage-users-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.search-bar-container input {
+    padding: 10px !important;
+    font-size: 1em ;
+    border: 1.5px solid #090E50 !important;
+    border-radius: 20px !important;
+    width: 100% !important;
+}
+
+.search-bar-container button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.search-bar-container button:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+}
+
+.users-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.usuario-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.usuario-card-title a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.usuario-info {
+    color: #333;
+    margin-top: 10px;
+}
+
+.actions-container {
+    margin-top: 18px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.actions-container .action {
+    flex-grow: 1;
+}
+
+.actions-container .action button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions-container .action button:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.button-column button {
+    padding: 10px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-column button:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+}

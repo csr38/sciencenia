@@ -1,0 +1,125 @@
+.background {
+    background-color: #F5F5F5;
+}
+
+.form-container {
+    font-family: Roboto, sans-serif;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 60px;
+}
+  
+.info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    width: 95%;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="email"],
+select,
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #EEEEEE;
+    color: #8F8F8F;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    color: #8F8F8F;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: #F5F5F5;
+    color: #090E50;
+    cursor: pointer;
+    border: 1.5px solid #090E50;
+    margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: #090E50;
+    color: #EEEEEE;
+}
+
+/*Especiales para Foumulario Editar Perfil Investigador:*/
+  
+.form-columns-container {
+    display: flex;
+    gap: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+.edit-investigator-profile-form-container {
+    font-family: Roboto, sans-serif;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.research-options {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 15px;
+}
+
+.research-options label {
+    display: flex;
+    align-items: center; 
+    margin-left: 0px;
+    font-size: 14px;
+    margin-bottom: -5px;
+}
+
+.research-options label + label {
+    margin-top: 10px;
+}
+
+.research-options input[type="checkbox"] {
+    margin-right: 5px;
+}

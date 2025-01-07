@@ -1,0 +1,91 @@
+{
+  "name": "sciencenia-hub",
+  "displayName": "Sciencenia Hub",
+  "expo": {
+    "name": "Sciencenia Hub",
+    "slug": "sciencenia-hub",
+    "scheme": "sciencenia-hub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/app-icon-all-cenia.png",
+    "updates": {
+        "fallbackToCacheTimeout": 0,
+        "url": "https://u.expo.dev/10970d21-9101-47ec-b134-073fa7d604e0"
+      },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "splash": {
+      "image": "./assets/images/splash-logo-all-cenia-3.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F5F5F5"
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "icon": "./assets/images/app-icon-all-cenia.png",
+      "package": "com.cenia.scienceniahub",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground-cenia-3.png",
+        "backgroundImage": "./assets/images/app-icon-android-adaptive-background-cenia.png"
+      },
+      "splash": {
+        "image": "./assets/images/splash-logo-all-cenia-3.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F5F5F5"
+      },
+      "permissions": [
+        "NOTIFICATIONS",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "ios": {
+      "icon": "./assets/images/app-icon-all-cenia.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cenia.scienceniahub",
+      "splash": {
+        "image": "./assets/images/splash-logo-all-cenia-3.png",
+        "tabletImage": "./assets/images/splash-logo-ios-tablet.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F5F5F5"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/app-icon-web-favicon.png",
+      "splash": {
+        "image": "./assets/images/splash-logo-web.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#191015"
+      },
+      "bundler": "metro"
+    },
+    "plugins": [
+      "react-native-background-fetch",
+      "expo-localization",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": false,
+            "deploymentTarget": "15.1"
+          },
+          "android": {
+            "newArchEnabled": false
+          }
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  },
+  "ignite": {
+    "version": "9.9.1"
+  }
+}

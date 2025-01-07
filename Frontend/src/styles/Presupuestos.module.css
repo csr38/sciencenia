@@ -1,0 +1,28 @@
+.centralContainer {
+    justify-content: center;
+    width: 80%;
+    margin: 6em;
+}
+
+.title {
+    text-align: center;
+    color: #090E50;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    margin-top: 3%;
+    background-color: #090E50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #272E71;
+}

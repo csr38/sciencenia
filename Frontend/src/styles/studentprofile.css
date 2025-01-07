@@ -1,0 +1,100 @@
+
+/* Existing styles */
+.background {
+  background-color: #F5F5F5;
+  margin-top: 10px;
+  color: #090e50;
+  font-family: "Quicksand-Bold", Helvetica;
+  overflow-y: scroll;
+}
+
+.big-container {
+  margin-top: 60px;
+}
+
+.container {
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.data-container {
+  margin-right: 35px;
+}
+
+.data-container h3 {
+  margin-left: 15px;
+}
+
+.data-container p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-button {
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  color: #090E50;
+  border: 2px solid #090E50;
+  margin-top: 0px; 
+  margin-left: 85%; 
+  width: auto;
+}
+
+.profile-button:hover {
+  background-color: #090E50;
+  border: 2px solid #090E50;
+  color: #EEEEEE;
+}
+
+/* New styles for the upload/update button */
+
+/* Profile Image Container */
+.profile-image-container {
+  position: relative;
+  width: fit-content;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+/* Profile Image */
+.profile-image {
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #090E50;
+}
+
+/* Upload Button Container */
+.upload-button-container {
+  position: absolute;
+  bottom: 5px; /* Slightly above the bottom edge */
+  right: 5px; /* Slightly inset from the right edge */
+}
+
+/* Upload Button Styling */
+.upload-button {
+  background-color: #e72887ff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "Quicksand-Bold", Helvetica;
+}
+
+.upload-button:hover {
+  background-color: #d81b6a;
+}

@@ -1,0 +1,198 @@
+.background {
+    background-color: #F5F5F5;
+    color: #090e50;
+    font-family: "Quicksand-Bold", Helvetica;
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.bigContainer {
+    margin-top: 60px;
+}
+
+.container {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.dataContainer{
+    margin-right: 35px;
+}
+
+.dataContainer h3{
+    margin-left: 15px;
+}
+
+.dataContainer p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.publiContainer {
+    display: flex;
+    margin-left: 0;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profileButton {
+    border-radius: 25px;
+    background-color: #f5f5f5;
+    color: #090E50;
+    border: 2px solid #090E50;
+    margin-top: 15px !important;
+    margin-left: 0;
+    width: auto;
+}
+
+.profileButton:hover {
+    background-color: #090E50;
+    border: 2px solid #090E50;
+    color: #EEEEEE;
+}
+
+.publicationsTitle {
+    position: relative;
+    margin-top: -20px;
+    margin-left: 0px;
+
+}
+
+ul {
+    margin-top: 0;
+}
+
+.researchLines {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.researchLine {
+    background-color: #D3D3D3;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #090e50;
+}
+
+.logoutContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.bottonButtonContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bottonButton {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bottonButton:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+    border: 1.5px solid #090E50;
+}
+
+.background-card {
+    background-color: #F5F5F5;
+    color: #090e50;
+    overflow-y: scroll;
+    justify-content: center;
+
+}
+
+.cardContent {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px;
+}
+
+.bigCard{
+    margin-top: 10px;
+    overflow-y: scroll;
+
+}
+.card{
+    color: black;
+    margin: 0 auto;
+    width:65%;
+    position:relative;
+    padding-top: 10%;
+    height: 50%;
+    margin-bottom: 5%;
+
+}
+.cardTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.cardTitle h1{
+    margin: 0;
+
+}
+
+.sm{
+    margin: 5px;
+}
+
+.sfm {
+    color: #e72887ff;
+}
+
+.smb{
+    margin-bottom: 10px;
+}
+
+.cardTwoCol{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+    margin-bottom: 10px;
+}
+
+.dropdownContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdownContainer input {
+    margin-bottom: 10px;
+}
+
+.dropdownContainer label {
+    margin-top: 12px;
+}

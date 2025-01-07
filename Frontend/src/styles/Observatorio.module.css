@@ -1,0 +1,220 @@
+.observatorioContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #090E50;
+}
+
+.searchBarContainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+
+}
+
+.searchBarContainer input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 20px !important;
+    width: 100%;
+    border: 1px solid #090E50 !important;
+}
+
+.searchBarContainer button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.searchBarContainer button:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+}
+
+.publiContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.publi {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.publicationTitle a {
+    color: #e72887ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.doi, .pdf {
+    color: #090E50;
+    margin-top: 10px;
+}
+
+.pdfContainer {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.pdfContainer .pdf {
+    flex-grow: 1;
+}
+
+.pdfContainer .pdf button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pdfContainer .pdf button:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    color: #090E50;
+    background-color: #F5F5F5;
+    border: 1.5px solid #090E50;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: calc(100% / var(--button-count));
+}
+
+.pagination button:hover {
+    background-color: #090E50;
+    color: #F5F5F5;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.pagination .active {
+    background-color: #090E50;
+    color: #F5F5F5;
+}
+
+.bigContainer {
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.bigContainer .yearInput {
+    display: flex;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filterTab {
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: -18%;
+    padding: 15px;
+    border-right: 1.5px solid #D3D3D3;
+    color: #090E50;
+}
+
+.filterTab input {
+    width: 75%;
+}
+
+.filterInput {
+    width: 100%;
+}
+
+.filterInput label {
+    margin: 10px 10px;
+}
+
+.researchLineFilterOption {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 8px;
+    width: 300px;
+    color: #090E50;
+}
+
+.researchLineFilter {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    min-width: 16px;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    flex-shrink: 0;
+    color: #e72887ff;
+}
+
+.researchLineFilter label {
+    flex-grow: 1;
+    padding-top: 1px;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+.researchsTab {
+    margin-left: 10%;
+    width: 100%;
+    justify-content: center;
+    flex-grow: 3;
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+}
