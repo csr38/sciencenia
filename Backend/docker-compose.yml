@@ -1,6 +1,8 @@
 services:
   api:
     hostname: api
+    env_file:
+      - .env
     build:
       context: ./
       args:
